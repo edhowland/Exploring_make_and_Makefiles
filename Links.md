@@ -8,4 +8,10 @@
 
 [Wildcard macro](https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html)
 
+## Macros
+
+[GNU make variables and macros](https://www.dummies.com/computers/operating-systems/linux/linux-variables-or-macros-in-the-gnu-make-utility/)
+
+
+
 
