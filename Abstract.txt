@@ -1,0 +1,17 @@
+Title: Making things up
+Author: Ed Howland
+Email: ed.howland@gmail.com
+
+Abstract:
+
+One of the least under appreciated utilities in the Unix/Linux toolbox 
+is the versatile 'make' program.   Since its inception by Stuart Feldmant 
+@ Bell Labs in 1976, it has emerged as the preminent build orchestration
+tool for many software and documentation projects although it is much more
+powerful  than just something to compile your C source code. In this session,
+we consider the usage of make itself and learn how to write and work with its
+Makefile language. We will build a simple app using a Makefile and extend it
+as our project is improved. Finally, we see an example document preparation
+project using make and some other tools.
+
+
