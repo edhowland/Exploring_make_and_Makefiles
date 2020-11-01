@@ -2,9 +2,9 @@ Title: Making things up
 Author: Ed Howland
 Email: ed.howland@gmail.com
 Location: November 2020 meeting of St. Louis Unix User's Group
-Date/Time: Wednesday November 11th, 2020 18:30. Duration 30 Minutes
-Slides: https://github.com/edhowland/Exploring_make_and_Makefiles
-
+Date/Time: Wednesday November 11th, 2020 18:30 (CST). Duration 30 Minutes
+Slides: https://github.com/edhowland/Exploring_make_and_Makefiles/
+This file: https://github.com/edhowland/Exploring_make_and_Makefiles/blob/main/Abstract.txt
 
 Abstract:
 
