@@ -3,7 +3,7 @@ Author: Ed Howland
 Email: ed.howland@gmail.com
 Location: November 2020 meeting of St. Louis Unix User's Group
 Date/Time: Wednesday November 11th, 2020 18:30. Duration 30 Minutes
-Slides: git@github.com:edhowland/Exploring_make_and_Makefiles.git
+Slides: https://github.com/edhowland/Exploring_make_and_Makefiles
 
 
 Abstract:
