@@ -15,3 +15,15 @@
 
 
 
+
+
+## Topic links
+
+### Pattern rules
+
+<https://www.gnu.org/software/make/manual/html_node/Pattern-Rules.html>
+
+### Using parameterized macros
+
+<https://www.gnu.org/software/make/manual/html_node/Call-Function.html>
+

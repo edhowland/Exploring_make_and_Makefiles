@@ -1,0 +1,1 @@
+alias mk.Makefile='sed -e '\''s/^  /\t/'\'' Makefile.in >Makefile'
