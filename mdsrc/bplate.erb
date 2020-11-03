@@ -1,0 +1,18 @@
+<% def hrule
+    "***"
+  end 
+  def links p, n
+    "[Prev](#{p})  [Next](#{n})"
+  end
+%>
+<% prev, ours, nxt = File.read(nbor).split %>
+<%= File.read("deck.title") %>
+<%= hrule %>
+<%= links prev, nxt %>
+<%= hrule %>
+
+<%= File.read(ours) %>
+<%= hrule %>
+<%= links prev, nxt %>
+<%= hrule %>
+<%= File.read("deck.footer") %>
