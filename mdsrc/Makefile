@@ -1,10 +1,7 @@
 # Makefile to produce HTML slide deck from *.md files
 
 # Setup some variables and macros
-SHELL:=/bin/bash
-TMPLPROC:=erb  # Use Ruby ERb for template processing
-MARKPROC:=redcarpet
-
+include vars.mk
 MDFILES=$(wildcard *.md)
 HTMLFILES=$(MDFILES:md=html)
 MD1FILES=$(MDFILES:md=md1)

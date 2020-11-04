@@ -35,3 +35,11 @@ use the substitution reference method:
 
 
 
+
+
+### Including other makefiles or makefile snippets
+
+You might want to place common variable or macro definitions in their own file
+and then include them in many different Makefile(s).
+
+<https://www.gnu.org/software/make/manual/html_node/Include.html>
