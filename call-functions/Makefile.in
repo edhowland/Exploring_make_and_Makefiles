@@ -1,0 +1,6 @@
+# reverses its parameters
+reverse=$(2) $(1)
+xxx=$(call reverse, foo, bar)
+
+all:
+  $(ECHO) $(xxx)
