@@ -2,6 +2,8 @@
 
 # Setup some variables and macros
 SHELL:=/bin/bash
+TMPLPROC:=erb  # Use Ruby ERb for template processing
+MARKPROC:=redcarpet
 
 MDFILES=$(wildcard *.md)
 HTMLFILES=$(MDFILES:md=html)
@@ -21,13 +23,13 @@ htmlfiles: bplate $(HTMLFILES)
 %.n : %.md
   ./mknbor.sh $< $@
 
-# Run the ERb template processor on a .n file to create a .md1 file input to Markdown processor
+# Run the   template processor on a .n file to create a .md1 file input to Markdown processor
 %.md1: %.n
-  erb nbor=$< bplate.erb > $@
+  $(TMPLPROC) nbor=$< bplate.erb > $@
 
 # Create our .html files from our .md1 output from last step
 %.html: %.md1
-  redcarpet $< > $@
+  $(MARKPROC) $< > $@
 
 
 # Create Boilerplate files
