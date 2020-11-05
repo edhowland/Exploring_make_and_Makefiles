@@ -22,7 +22,7 @@ htmlfiles: bplate $(HTMLFILES)
 
 # Run the   template processor on a .n file to create a .md1 file input to Markdown processor
 %.md1: %.n
-	$(TMPLPROC) nbor=$< bplate.erb > $@
+	$(TMPLPROC) -r ./bplate_lib.rb nbor=$< bplate.erb > $@
 
 # Create our .html files from our .md1 output from last step
 %.html: %.md1
