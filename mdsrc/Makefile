@@ -2,9 +2,11 @@
 
 # Setup some variables and macros
 include vars.mk
+
 MDFILES=$(wildcard *.md)
 HTMLFILES=$(MDFILES:md=html)
 MD1FILES=$(MDFILES:md=md1)
+MD2FILES=$(MDFILES:md=md2)
 NFILES=$(MDFILES:md=n)
 
 # Our top level target
@@ -14,18 +16,28 @@ nfiles: $(NFILES)
 
 md1files: $(MD1FILES)
 
+md2files: $(MD2FILES)
+
 htmlfiles: bplate $(HTMLFILES)
 
 # Our pattern rule to create a foo.n from a foo.md
 %.n : %.md
-	./mknbor.sh $< $@
+	$(MKNBOR) $< $@
 
-# Run the   template processor on a .n file to create a .md1 file input to Markdown processor
+%.hn: %.n
+	$(NBORSUB) $< $@
+
+# Run the   template processor on a .n file to create a .md1 file 
 %.md1: %.n
 	$(TMPLPROC) -r ./bplate_lib.rb nbor=$< bplate.erb > $@
 
+# Run the template processor to convert .md file to .md2 as input to Markdown processor
+%.md2: %.hn
+	$(TMPLPROC) -r ./bplate_lib.rb nbor=$< bplate.erb > $@
+	
+
 # Create our .html files from our .md1 output from last step
-%.html: %.md1
+%.html: %.md2
 	$(MARKPROC) $< > $@
 
 
@@ -43,4 +55,4 @@ deck.footer:
 
 
 clean:
-	$(RM) $(NFILES) $(MD1FILES) $(HTMLFILES) deck.title deck.footer
+	$(RM) $(NFILES) $(MD1FILES) $(MD2FILES) $(HTMLFILES) deck.title deck.footer
