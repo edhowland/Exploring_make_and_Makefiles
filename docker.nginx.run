@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --name webd -v ${PWD}/html:/usr/share/nginx/html:ro -d -p 8080:80 nginx
