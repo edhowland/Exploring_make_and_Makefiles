@@ -7,6 +7,10 @@ This tutorial will provide an introduction to GNU make and provide some syntax a
 
 ## Slides
 
+For the impatient:
+
+[Exploring Make and Makefiles slide deck](mds/bar10.md)
+
 ### Using Docker to run the slide deck.
 
 ```bash

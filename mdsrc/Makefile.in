@@ -19,6 +19,7 @@ md1files: $(MD1FILES)
 md2files: $(MD2FILES)
 
 htmlfiles: bplate $(HTMLFILES)
+  FIRST=$$(head -1 deck.slides | sed -e 's/md/html/'); ln $$FIRST index.html
 
 # Our pattern rule to create a foo.n from a foo.md
 %.n : %.md
@@ -55,4 +56,4 @@ deck.footer:
 
 
 clean:
-  $(RM) $(NFILES) $(MD1FILES) $(MD2FILES) $(HTMLFILES) deck.title deck.footer
+  $(RM) $(NFILES) $(MD1FILES) $(MD2FILES) $(HTMLFILES) deck.title deck.footer index.html

@@ -2,7 +2,7 @@
 SHELL:=/bin/bash
 
 # Slide neighbor handlers
-MKNBOR=./mknbor.sh      # Creates .n file from .md file
+MKNBOR=./mknbor.rb      # Creates .n file from .md file
 NBORSUB=./mkhn.rb       # creates .hn file fron .n file
 TMPLPROC:=erb  # Use Ruby ERb for template processing
 MARKPROC:=redcarpet
