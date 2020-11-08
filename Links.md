@@ -54,3 +54,17 @@ almost  never what you want to do.
 
 <https://www.gnu.org/software/make/manual/html_node/Recursion.html>
 
+
+### GNU Make standard Library
+
+A set of extension functions for things like:
+
+- Integers,
+- Strings
+- Lists
+- Associative arrays
+
+And .etc
+
+<https://sourceforge.net/projects/gmsl/>
+

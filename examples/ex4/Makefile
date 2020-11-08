@@ -1,0 +1,12 @@
+#Adding .h header dependencies to .o files
+
+hello: greet.o main.o
+	gcc -o hello main.o greet.o
+
+greet.o: greet.c greet.h
+
+main.o: main.c greet.h
+
+# A pseudo target to clean up artifacts created by compiler
+clean:
+	rm -f *.o hello
