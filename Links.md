@@ -19,6 +19,16 @@
 
 ## Topic links
 
+### Builtin pre-defined variables
+
+<https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html>
+
+### Implicit rules
+
+Rules that GNU make already knows how to build for you.
+
+<ftp://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_chapter/make_10.html>
+
 ### Pattern rules
 
 <https://www.gnu.org/software/make/manual/html_node/Pattern-Rules.html>
