@@ -19,6 +19,10 @@
 The following links were taken from here.
 <https://www.gnu.org/software/make/>
 
+### The GNU make manual in linked HTML format
+
+<https://www.gnu.org/software/make/manual/html_node/index.html>
+
 
 ## Topic links
 
