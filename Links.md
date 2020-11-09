@@ -14,7 +14,10 @@
 
 
 
+## The GNU make manual
 
+The following links were taken from here.
+<https://www.gnu.org/software/make/>
 
 
 ## Topic links
