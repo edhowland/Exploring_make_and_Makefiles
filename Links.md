@@ -23,6 +23,12 @@
 
 <https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html>
 
+### Automatic variables
+
+These variables: $@, $<, $^ and $*  can be used in pattern rules.  (See below)
+
+<https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html>
+
 ### Implicit rules
 
 Rules that GNU make already knows how to build for you.
@@ -81,6 +87,10 @@ with the $(wildcard *.c) function.
 
 Note, this function can be used in conjunction with the foreach function above.
 
+## Escaping characters, strings in Makefiles
+
+<https://www.cmcrossroads.com/article/gnu-make-escaping-walk-wild-side>
+
 
 ## Third party tools
 
@@ -88,6 +98,7 @@ Note, this function can be used in conjunction with the foreach function above.
 
 A set of extension functions for things like:
 
+- Debugging
 - Integers,
 - Strings
 - Lists
@@ -96,4 +107,6 @@ A set of extension functions for things like:
 And .etc
 
 <https://sourceforge.net/projects/gmsl/>
+
+
 
