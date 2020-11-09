@@ -64,6 +64,25 @@ almost  never what you want to do.
 
 <https://www.gnu.org/software/make/manual/html_node/Recursion.html>
 
+### The foreach function
+
+The $(foreach var, list, text)  function can be used to create customized text
+expansions from lists. These can be used to create new variables or commands
+to be run in the action part of a rule.
+
+<https://www.gnu.org/software/make/manual/html_node/Foreach-Function.html>
+
+### The wildcard function
+
+It is posible to get a  list of filenames from the directory using a glob pattern
+with the $(wildcard *.c) function. 
+
+<https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html>
+
+Note, this function can be used in conjunction with the foreach function above.
+
+
+## Third party tools
 
 ### GNU Make standard Library
 
