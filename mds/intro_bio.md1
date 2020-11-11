@@ -3,7 +3,7 @@
 # Exploring make and Makefiles
 
 ***
-[Prev](intro_bio.md)  [Next](ex1_simple_C.md)
+[Prev](intro_bio.md)  [Next](what_is_make.md)
 ***
 
 # Making it all up!
@@ -31,7 +31,7 @@ Ed currently resides in Grand Rapids, Michigan.
 Bio as of 3 July 2020. 
 
 ***
-[Prev](intro_bio.md)  [Next](ex1_simple_C.md)
+[Prev](intro_bio.md)  [Next](what_is_make.md)
 ***
 copyright Ed Howland 2020 email: ed.howland@gmail.com
 

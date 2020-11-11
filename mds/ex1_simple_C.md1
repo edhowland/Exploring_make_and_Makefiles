@@ -3,7 +3,7 @@
 # Exploring make and Makefiles
 
 ***
-[Prev](intro_bio.md)  [Next](ex2_multiple_c_sources.md)
+[Prev](what_is_make.md)  [Next](ex2_multiple_c_sources.md)
 ***
 
 # Example 1 - A simple C program
@@ -24,7 +24,7 @@ Hello World!
 Note that there is no Makefile here, but we can use the make program to compile our code.
 
 ***
-[Prev](intro_bio.md)  [Next](ex2_multiple_c_sources.md)
+[Prev](what_is_make.md)  [Next](ex2_multiple_c_sources.md)
 ***
 copyright Ed Howland 2020 email: ed.howland@gmail.com
 
