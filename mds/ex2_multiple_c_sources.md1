@@ -1,3 +1,11 @@
+
+
+# Exploring make and Makefiles
+
+***
+[Prev](ex1_simple_C.md)  [Next](ex3_two_targets.md)
+***
+
 # Extending our example with 2 files
 
 ``` bash
@@ -35,4 +43,10 @@ Hello World!
 
 ```
 
+
+
+***
+[Prev](ex1_simple_C.md)  [Next](ex3_two_targets.md)
+***
+copyright Ed Howland 2020 email: ed.howland@gmail.com
 

@@ -1,0 +1,36 @@
+<h1>Exploring make and Makefiles</h1>
+
+<hr>
+
+<p><a href="ex5_adding_common_variables.html">Prev</a>  <a href="ex7_add_new_target_goodbye.html">Next</a></p>
+
+<hr>
+
+<h1>Improve our Makefile by eliminating redundencies</h1>
+
+<pre><code class="Makefile">CFLAGS= -Wall -Werror
+
+hello: greet.o main.o
+    gcc -o hello main.o greet.o
+
+# A pattern rule to control  creating .o files out of .c files
+%.o: %.c
+    $(CC) $(CFLAGS) -c $&lt;
+
+greet.o: greet.c greet.h
+
+main.o: main.c greet.h
+
+# A pseudo target to clean up artifacts created by compiler
+clean:
+    $(RM) *.o hello
+
+</code></pre>
+
+<hr>
+
+<p><a href="ex5_adding_common_variables.html">Prev</a>  <a href="ex7_add_new_target_goodbye.html">Next</a></p>
+
+<hr>
+
+<p>copyright Ed Howland 2020 email: ed.howland@gmail.com</p>

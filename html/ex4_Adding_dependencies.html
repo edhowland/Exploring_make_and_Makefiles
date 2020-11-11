@@ -1,0 +1,57 @@
+<h1>Exploring make and Makefiles</h1>
+
+<hr>
+
+<p><a href="ex3_two_targets.html">Prev</a>  <a href="ex5_adding_common_variables.html">Next</a></p>
+
+<hr>
+
+<h1>Adding a header file dependency to our source</h1>
+
+<pre><code class="bash">
+$ ls
+greet.c  greet.h  main.c  Makefile 
+</code></pre>
+
+<pre><code class="Makefile">#Adding .h header dependencies to .o files
+
+hello: greet.o main.o
+    gcc -o hello main.o greet.o
+
+greet.o: greet.c greet.h
+
+main.o: main.c greet.h
+
+# A pseudo target to clean up artifacts created by compiler
+clean:
+    rm -f *.o hello
+</code></pre>
+
+<h2>Calling make</h2>
+
+<pre><code class="bash">$ make
+cc    -c -o greet.o greet.c
+cc    -c -o main.o main.c
+gcc -o hello main.o greet.o
+$ touch greet.c
+$ make
+cc    -c -o greet.o greet.c
+gcc -o hello main.o greet.o
+$ touch greet.h
+$ make
+cc    -c -o greet.o greet.c
+cc    -c -o main.o main.c
+gcc -o hello main.o greet.o
+$ ./hello 
+Hello World!
+$ 
+
+</code></pre>
+
+<hr>
+
+<p><a href="ex3_two_targets.html">Prev</a>  <a href="ex5_adding_common_variables.html">Next</a></p>
+
+<hr>
+
+<p>copyright Ed Howland 2020 email: ed.howland@gmail.com</p>

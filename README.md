@@ -9,7 +9,7 @@ This tutorial will provide an introduction to GNU make and provide some syntax a
 
 For the impatient:
 
-[Exploring Make and Makefiles slide deck](mds/bar10.md)
+[Exploring Make and Makefiles slide deck](mds/intro_bio.md)
 
 ### Using Docker to run the slide deck.
 

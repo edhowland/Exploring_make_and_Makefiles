@@ -1,0 +1,78 @@
+<h1>Exploring make and Makefiles</h1>
+
+<hr>
+
+<p><a href="ex8_macros.html">Prev</a>  <a href="Links.html">Next</a></p>
+
+<hr>
+
+<h1>Makefile to produce HTML slide deck from *.md files</h1>
+
+<pre><code class="Makefile">
+# Setup some variables and macros
+include vars.mk
+
+MDFILES=$(wildcard *.md)
+HTMLFILES=$(MDFILES:md=html)
+MD1FILES=$(MDFILES:md=md1)
+MD2FILES=$(MDFILES:md=md2)
+NFILES=$(MDFILES:md=n)
+
+# Our top level target
+all: htmlfiles md1files
+
+nfiles: $(NFILES)
+
+md1files: $(MD1FILES)
+
+md2files: $(MD2FILES)
+
+htmlfiles: bplate $(HTMLFILES)
+    FIRST=$$(head -1 deck.slides | sed -e &#39;s/md/html/&#39;); ln $$FIRST index.html
+
+# Our pattern rule to create a foo.n from a foo.md
+%.n : %.md
+    $(MKNBOR) $&lt; $@
+
+%.hn: %.n
+    $(NBORSUB) $&lt; $@
+
+# Run the   template processor on a .n file to create a .md1 file 
+%.md1: %.n
+    $(TMPLPROC) -r ./bplate_lib.rb nbor=$&lt; bplate.erb &gt; $@
+
+# Run the template processor to convert .md file to .md2 as input to Markdown processor
+%.md2: %.hn
+    $(TMPLPROC) -r ./bplate_lib.rb nbor=$&lt; bplate.erb &gt; $@
+
+
+# Create our .html files from our .md1 output from last step
+%.html: %.md2
+    $(MARKPROC) $&lt; &gt; $@
+
+
+# Create Boilerplate files
+bplate: deck.title deck.footer
+
+deck.title:
+    head -1 ../README.md &gt; deck.title
+
+deck.footer:
+    ./mkfooter.sh
+
+
+
+
+
+clean:
+    $(RM) $(NFILES) $(MD1FILES) $(MD2FILES) $(HTMLFILES) deck.title deck.footer index.html
+
+</code></pre>
+
+<hr>
+
+<p><a href="ex8_macros.html">Prev</a>  <a href="Links.html">Next</a></p>
+
+<hr>
+
+<p>copyright Ed Howland 2020 email: ed.howland@gmail.com</p>

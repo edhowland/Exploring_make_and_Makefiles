@@ -1,4 +1,5 @@
 # Add a new target: The goodbye program
+``` Makefile
 
 CFLAGS= -Wall -Werror
 
@@ -29,3 +30,5 @@ main.o: main.c aloha.h
 # A pseudo target to clean up artifacts created by compiler
 clean:
 	$(RM) $(OBJS) $(PROGS)
+
+```

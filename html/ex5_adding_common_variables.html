@@ -1,0 +1,35 @@
+<h1>Exploring make and Makefiles</h1>
+
+<hr>
+
+<p><a href="ex4_Adding_dependencies.html">Prev</a>  <a href="ex6_improve_by_removing_repeats.html">Next</a></p>
+
+<hr>
+
+<h1>Adding common variables to our cc targets</h1>
+
+<pre><code class="Makefile">
+CFLAGS= -Wall -Werror
+
+hello: greet.o main.o
+    gcc -o hello main.o greet.o
+
+greet.o: greet.c greet.h
+    $(CC) $(CFLAGS) -c greet.c
+
+main.o: main.c greet.h
+    $(CC) $(CFLAGS) -c main.c
+
+# A pseudo target to clean up artifacts created by compiler
+clean:
+    rm -f *.o hello
+
+</code></pre>
+
+<hr>
+
+<p><a href="ex4_Adding_dependencies.html">Prev</a>  <a href="ex6_improve_by_removing_repeats.html">Next</a></p>
+
+<hr>
+
+<p>copyright Ed Howland 2020 email: ed.howland@gmail.com</p>

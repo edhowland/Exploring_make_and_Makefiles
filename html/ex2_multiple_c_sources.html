@@ -1,0 +1,46 @@
+<h1>Exploring make and Makefiles</h1>
+
+<hr>
+
+<p><a href="ex1_simple_C.html">Prev</a>  <a href="ex3_two_targets.html">Next</a></p>
+
+<hr>
+
+<h1>Extending our example with 2 files</h1>
+
+<pre><code class="bash">
+$ ls
+greet.c  main.c  Makefile 
+</code></pre>
+
+<h2>Our Makefile</h2>
+
+<pre><code class="Makefile">hello: greet.o main.o
+    gcc -o hello main.o greet.o
+
+</code></pre>
+
+<p>Note the &#39;gcc&#39; line is indented by a single tab character.</p>
+
+<h2>Making hello</h2>
+
+<pre><code class="bash">$ make
+cc    -c -o greet.o greet.c
+cc    -c -o main.o main.c
+gcc -o hello main.o greet.o
+</code></pre>
+
+<h2>Running our program</h2>
+
+<pre><code class="bash">$ ./hello 
+Hello World!
+
+</code></pre>
+
+<hr>
+
+<p><a href="ex1_simple_C.html">Prev</a>  <a href="ex3_two_targets.html">Next</a></p>
+
+<hr>
+
+<p>copyright Ed Howland 2020 email: ed.howland@gmail.com</p>

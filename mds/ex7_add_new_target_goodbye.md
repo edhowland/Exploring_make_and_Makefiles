@@ -1,14 +1,19 @@
-# Macros or recursive variables
 
+
+# Exploring make and Makefiles
+
+***
+[Prev](ex6_improve_by_removing_repeats.md)  [Next](ex8_macros.md)
+***
+
+# Add a new target: The goodbye program
 ``` Makefile
-
 
 CFLAGS= -Wall -Werror
 
 # Local variables/macros
 PROGS=hello goodbye
-SRCS=$(wildcard *.c)
-OBJS=$(SRCS:.c=.o)
+OBJS=hail.o main.o farewell.o
 
 all: $(PROGS)
 
@@ -30,13 +35,14 @@ farewell.o: farewell.c aloha.h
 
 main.o: main.c aloha.h
 
-# A test target
-cmds:=$(foreach x, $(PROGS), ./$(x);)
-test: $(PROGS)
-	$(cmds)
-
 # A pseudo target to clean up artifacts created by compiler
 clean:
 	$(RM) $(OBJS) $(PROGS)
 
 ```
+
+***
+[Prev](ex6_improve_by_removing_repeats.md)  [Next](ex8_macros.md)
+***
+copyright Ed Howland 2020 email: ed.howland@gmail.com
+

@@ -5,5 +5,5 @@ SHELL:=/bin/bash
 MKNBOR=./mknbor.rb      # Creates .n file from .md file
 NBORSUB=./mkhn.rb       # creates .hn file fron .n file
 TMPLPROC:=erb  # Use Ruby ERb for template processing
-MARKPROC:=redcarpet
+MARKPROC:=redcarpet --parse fenced-code-blocks
 

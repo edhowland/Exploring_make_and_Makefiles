@@ -1,0 +1,125 @@
+<h1>Exploring make and Makefiles</h1>
+
+<hr>
+
+<p><a href="complete_ex.html">Prev</a>  <a href="Links.html">Next</a></p>
+
+<hr>
+
+<h1>Links to learn more</h1>
+
+<h2>Videos</h2>
+
+<p><a href="https://www.youtube.com/watch?v=WFLvcMiG38w">Introduction to make and GNU autotools</a></p>
+
+<h2>Selected pages from the manual</h2>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html">Wildcard macro</a></p>
+
+<h2>Macros</h2>
+
+<p><a href="https://www.dummies.com/computers/operating-systems/linux/linux-variables-or-macros-in-the-gnu-make-utility/">GNU make variables and macros</a></p>
+
+<h2>The GNU make manual</h2>
+
+<p>The following links were taken from here.
+<a href="https://www.gnu.org/software/make/">https://www.gnu.org/software/make/</a></p>
+
+<h3>The GNU make manual in linked HTML format</h3>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/index.html">https://www.gnu.org/software/make/manual/html_node/index.html</a></p>
+
+<h2>Topic links</h2>
+
+<h3>Builtin pre-defined variables</h3>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html">https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html</a></p>
+
+<h3>Automatic variables</h3>
+
+<p>These variables: $@, $&lt;, $^ and $*  can be used in pattern rules.  (See below)</p>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html">https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html</a></p>
+
+<h3>Implicit rules</h3>
+
+<p>Rules that GNU make already knows how to build for you.</p>
+
+<p><a href="ftp://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_chapter/make_10.html">ftp://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_chapter/make_10.html</a></p>
+
+<h3>Pattern rules</h3>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/Pattern-Rules.html">https://www.gnu.org/software/make/manual/html_node/Pattern-Rules.html</a></p>
+
+<h3>Using parameterized macros</h3>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/Call-Function.html">https://www.gnu.org/software/make/manual/html_node/Call-Function.html</a></p>
+
+<h3>Pattern substitutions</h3>
+
+<p>To modify a list of files with one extension and replace it with another extension
+use the substitution reference method:
+<a href="https://www.gnu.org/software/make/manual/html_node/Substitution-Refs.html">https://www.gnu.org/software/make/manual/html_node/Substitution-Refs.html</a></p>
+
+<h3>Including other makefiles or makefile snippets</h3>
+
+<p>You might want to place common variable or macro definitions in their own file
+and then include them in many different Makefile(s).</p>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/Include.html">https://www.gnu.org/software/make/manual/html_node/Include.html</a></p>
+
+<h3>Recursive Makefiles</h3>
+
+<p>If you have a large system consisting of many sub modules, each with their own
+Makefile, there is a way to recurse into sub-directories and run the Makefile
+found therein. Do not use &#39;cd sub1&#39; and then run &#39;make&#39; in an action. This is
+almost  never what you want to do.</p>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/Recursion.html">https://www.gnu.org/software/make/manual/html_node/Recursion.html</a></p>
+
+<h3>The foreach function</h3>
+
+<p>The $(foreach var, list, text)  function can be used to create customized text
+expansions from lists. These can be used to create new variables or commands
+to be run in the action part of a rule.</p>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/Foreach-Function.html">https://www.gnu.org/software/make/manual/html_node/Foreach-Function.html</a></p>
+
+<h3>The wildcard function</h3>
+
+<p>It is posible to get a  list of filenames from the directory using a glob pattern
+with the $(wildcard *.c) function. </p>
+
+<p><a href="https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html">https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html</a></p>
+
+<p>Note, this function can be used in conjunction with the foreach function above.</p>
+
+<h2>Escaping characters, strings in Makefiles</h2>
+
+<p><a href="https://www.cmcrossroads.com/article/gnu-make-escaping-walk-wild-side">https://www.cmcrossroads.com/article/gnu-make-escaping-walk-wild-side</a></p>
+
+<h2>Third party tools</h2>
+
+<h3>GNU Make standard Library</h3>
+
+<p>A set of extension functions for things like:</p>
+
+<ul>
+<li>Debugging</li>
+<li>Integers,</li>
+<li>Strings</li>
+<li>Lists</li>
+<li>Associative arrays</li>
+</ul>
+
+<p>And .etc</p>
+
+<p><a href="https://sourceforge.net/projects/gmsl/">https://sourceforge.net/projects/gmsl/</a></p>
+
+<hr>
+
+<p><a href="complete_ex.html">Prev</a>  <a href="Links.html">Next</a></p>
+
+<hr>
+
+<p>copyright Ed Howland 2020 email: ed.howland@gmail.com</p>

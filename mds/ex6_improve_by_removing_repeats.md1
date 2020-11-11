@@ -1,3 +1,11 @@
+
+
+# Exploring make and Makefiles
+
+***
+[Prev](ex5_adding_common_variables.md)  [Next](ex7_add_new_target_goodbye.md)
+***
+
 # Improve our Makefile by eliminating redundencies
 
 ``` Makefile
@@ -19,3 +27,9 @@ clean:
 	$(RM) *.o hello
 
 ```
+
+***
+[Prev](ex5_adding_common_variables.md)  [Next](ex7_add_new_target_goodbye.md)
+***
+copyright Ed Howland 2020 email: ed.howland@gmail.com
+

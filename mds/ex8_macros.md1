@@ -1,3 +1,11 @@
+
+
+# Exploring make and Makefiles
+
+***
+[Prev](ex7_add_new_target_goodbye.md)  [Next](complete_ex.md)
+***
+
 # Macros or recursive variables
 
 ``` Makefile
@@ -40,3 +48,9 @@ clean:
 	$(RM) $(OBJS) $(PROGS)
 
 ```
+
+***
+[Prev](ex7_add_new_target_goodbye.md)  [Next](complete_ex.md)
+***
+copyright Ed Howland 2020 email: ed.howland@gmail.com
+

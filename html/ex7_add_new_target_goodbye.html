@@ -1,0 +1,50 @@
+<h1>Exploring make and Makefiles</h1>
+
+<hr>
+
+<p><a href="ex6_improve_by_removing_repeats.html">Prev</a>  <a href="ex8_macros.html">Next</a></p>
+
+<hr>
+
+<h1>Add a new target: The goodbye program</h1>
+
+<pre><code class="Makefile">
+CFLAGS= -Wall -Werror
+
+# Local variables/macros
+PROGS=hello goodbye
+OBJS=hail.o main.o farewell.o
+
+all: $(PROGS)
+
+
+hello: hail.o main.o
+    $(CC) -o $@ $^
+
+
+goodbye: main.o farewell.o
+    $(CC) -o $@ $^
+
+# A pattern rule to control  creating .o files out of .c files
+%.o: %.c
+    $(CC) $(CFLAGS) -c $&lt;
+
+hail.o: hail.c aloha.h
+
+farewell.o: farewell.c aloha.h
+
+main.o: main.c aloha.h
+
+# A pseudo target to clean up artifacts created by compiler
+clean:
+    $(RM) $(OBJS) $(PROGS)
+
+</code></pre>
+
+<hr>
+
+<p><a href="ex6_improve_by_removing_repeats.html">Prev</a>  <a href="ex8_macros.html">Next</a></p>
+
+<hr>
+
+<p>copyright Ed Howland 2020 email: ed.howland@gmail.com</p>

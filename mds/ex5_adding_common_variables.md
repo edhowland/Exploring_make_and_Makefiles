@@ -1,3 +1,11 @@
+
+
+# Exploring make and Makefiles
+
+***
+[Prev](ex4_Adding_dependencies.md)  [Next](ex6_improve_by_removing_repeats.md)
+***
+
 # Adding common variables to our cc targets
 
 ``` Makefile
@@ -18,3 +26,9 @@ clean:
 	rm -f *.o hello
 
 ```
+
+***
+[Prev](ex4_Adding_dependencies.md)  [Next](ex6_improve_by_removing_repeats.md)
+***
+copyright Ed Howland 2020 email: ed.howland@gmail.com
+

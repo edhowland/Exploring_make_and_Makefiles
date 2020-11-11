@@ -1,3 +1,11 @@
+
+
+# Exploring make and Makefiles
+
+***
+[Prev](ex3_two_targets.md)  [Next](ex5_adding_common_variables.md)
+***
+
 # Adding a header file dependency to our source
 
 
@@ -45,3 +53,9 @@ Hello World!
 $ 
 
 ```
+
+***
+[Prev](ex3_two_targets.md)  [Next](ex5_adding_common_variables.md)
+***
+copyright Ed Howland 2020 email: ed.howland@gmail.com
+

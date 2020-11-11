@@ -1,3 +1,11 @@
+
+
+# Exploring make and Makefiles
+
+***
+[Prev](ex2_multiple_c_sources.md)  [Next](ex4_Adding_dependencies.md)
+***
+
 # A Makefile with 2 targets
 
 ``` Makefile
@@ -33,4 +41,10 @@ cc    -c -o greet.o greet.c
 cc    -c -o main.o main.c
 gcc -o hello main.o greet.o
 ```
+
+
+***
+[Prev](ex2_multiple_c_sources.md)  [Next](ex4_Adding_dependencies.md)
+***
+copyright Ed Howland 2020 email: ed.howland@gmail.com
 
