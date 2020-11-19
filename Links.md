@@ -2,15 +2,22 @@
 
 ## Videos
 
-[Introduction to make and GNU autotools](https://www.youtube.com/watch?v=WFLvcMiG38w)
+Introduction to make and GNU autotools
 
-## Selected pages from the manual
+<https://www.youtube.com/watch?v=WFLvcMiG38w>
 
-[Wildcard macro](https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html)
+## Books
+
+Managing projects with GNU Make
+
+<https://www.oreilly.com/openbook/make3/book/index.csp>
+
 
 ## Macros
 
-[GNU make variables and macros](https://www.dummies.com/computers/operating-systems/linux/linux-variables-or-macros-in-the-gnu-make-utility/)
+GNU make variables and macros
+
+<h<ttps://www.dummies.com/computers/operating-systems/linux/linux-variables-or-macros-in-the-gnu-make-utility/>
 
 
 
@@ -98,6 +105,11 @@ Note, this function can be used in conjunction with the foreach function above.
 
 <https://www.cmcrossroads.com/article/gnu-make-escaping-walk-wild-side>
 
+### The .PHONY target
+
+<https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html>
+
+
 
 ## Third party tools
 
@@ -117,3 +129,6 @@ And .etc
 
 
 
+
+
+##
